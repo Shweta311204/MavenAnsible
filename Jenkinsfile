@@ -13,7 +13,7 @@ stages{
 stage('Checkout')
 {
 steps{
-git branch:'master' url:'https://github.com/Shweta311204/MavenAnsible.git'
+git branch:'master', url:'https://github.com/Shweta311204/MavenAnsible.git'
 }}
   stage('Build')
   {
