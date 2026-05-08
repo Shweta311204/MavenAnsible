@@ -10,7 +10,7 @@ tools
 maven 'Maven'
 }
 stages{
-stage('Build)
+stage('Build')
 {
 steps{
 git branch:'master' url:'https://github.com/Shweta311204/MavenAnsible.git'
