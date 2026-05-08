@@ -10,11 +10,17 @@ tools
 maven 'Maven'
 }
 stages{
-stage('Build')
+stage('Checkout')
 {
 steps{
 git branch:'master' url:'https://github.com/Shweta311204/MavenAnsible.git'
 }}
+  stage('Build')
+  {
+    steps
+    {
+      sh 'mvn clean package'
+    }}
 stage('Archive')
 {steps{
 archiveArtifacts artifacts='target/*.war' fingerprint:true
